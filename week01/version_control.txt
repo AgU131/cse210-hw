@@ -1,0 +1,26 @@
+CSE210 - Agustin Heredia
+W01 Assignment: Explain Version Control
+Overview
+Articulate the principle of version control.
+
+Instructions
+Now that you have learned about the principle of version control and practiced using Git and GitHub, answer the following question (the way you would in a job interview):
+
+---> What is version control and why is it important?
+
+Your response must:
+- Explain the meaning of Version Control
+- Highlight a benefit of Version Control
+- Example of version control: Describe the way version control might be used on a software development team.
+- Show a command used in Version Control (for example a Git command)
+- Thoroughly explain these concepts (this likely cannot be done in less than 100 words)
+
+Version control is a system that helps track and manage changes in a project, especially in software development. It allows multiple people to work on the same project without losing previous versions or overwriting each other's work.
+
+One key benefit of version control is that it helps recover previous versions if a mistake is made. This makes it easier to fix errors and track progress.
+
+For example, in a software development team, each developer can work on a different feature and later combine their work without conflicts.
+
+A common Git command is git commit, which saves changes to the project so they can be reviewed or restored later.
+
+In summary, version control is essential for teamwork, organization, and preventing data loss.
