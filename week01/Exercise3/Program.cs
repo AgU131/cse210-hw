@@ -6,12 +6,6 @@ class Program
     static void Main(string[] args)
     {
 
-        // string response = "yes";
-        // while (response == "yes")
-        // {
-        //     Console.Write("Do you want to continue? ");
-        //     response = Console.ReadLine();
-        // }
 
         // Asking for the magic number
         // Console.Write("what is the magic number? ");
@@ -19,36 +13,44 @@ class Program
         // int magicNumber = int.Parse(magical);
         // Console.WriteLine($"magic number: {magicNumber} ");
 
-        Random randomGenerator = new Random();
-        int magicNumber = randomGenerator.Next(1, 100);
-        Console.WriteLine($"Random number: {magicNumber}");
-
-        int guess = 0;
-        string answer = "";
-
-        int attempt = 0;
-
-        while (guess != magicNumber)
+        string response = "yes";
+        while (response == "yes")
         {
-            Console.Write("what is your guess? ");
-            answer = Console.ReadLine();
-            guess = int.Parse(answer);
-            attempt++;
+            Console.WriteLine("Welcome to the Guessing Game!");
+            Random randomGenerator = new Random();
+            int magicNumber = randomGenerator.Next(1, 100);
+            Console.WriteLine($"Random number: {magicNumber}");
 
-            if (guess == magicNumber)
+            int guess = 0;
+            string answer = "";
+
+            int attempt = 0;
+
+            while (guess != magicNumber)
             {
-                Console.WriteLine("You guessed it!");
+                Console.Write("what is your guess? ");
+                answer = Console.ReadLine();
+                guess = int.Parse(answer);
+                attempt++;
+
+                if (guess == magicNumber)
+                {
+                    Console.WriteLine("You guessed it!");
+                }
+                else if (guess > magicNumber)
+                {
+                    Console.WriteLine("Lower!");
+                }
+                else
+                {
+                    Console.WriteLine("Higher!");
+                }
             }
-            else if (guess > magicNumber)
-            {
-                Console.WriteLine("Lower!");
-            }
-            else
-            {
-                Console.WriteLine("Higher!");
-            }
+            Console.WriteLine($"It took you {attempt} attempts to guess the magic number!");
+            
+        Console.WriteLine("Do you want to continue? ");
+        response = Console.ReadLine();
         }
-        Console.Write($"It took you {attempt} attempts to guess the magic number!");
-        
+        Console.WriteLine("Thanks for playing!");
     }
 }
