@@ -1,48 +1,48 @@
 using System;
+using System.Collections.Generic;
 
 class Program
 {
     static void Main(string[] args)
     {
-        DisplayWelcomeMessage();
+        List<int> numbers = new List<int>();
+        
+        int userNumber = -1;
+        while (userNumber != 0)
+        {
+            Console.Write("Enter a number (0 to quit): ");
+            
+            string userResponse = Console.ReadLine();
+            userNumber = int.Parse(userResponse);
+            
+            if (userNumber != 0)
+            {
+                numbers.Add(userNumber);
+            }
+        }
 
-        string userName = PromptUserName();
-        int userNumber = PromptUserNumber();
+        int sum = 0;
+        foreach (int number in numbers)
+        {
+            sum += number;
+        }
 
-        int squaredNumber = SquareNumber(userNumber);
+        Console.WriteLine($"The sum is: {sum}");
 
-        DisplayResult(userName, squaredNumber);
-    }
+        float average = ((float)sum) / numbers.Count;
+        Console.WriteLine($"The average is: {average}");
 
-    static void DisplayWelcomeMessage()
-    {
-        Console.WriteLine("Welcome to the program!");
-    }
+        
+        int max = numbers[0];
 
-    static string PromptUserName()
-    {
-        Console.Write("Please enter your name: ");
-        string name = Console.ReadLine();
+        foreach (int number in numbers)
+        {
+            if (number > max)
+            {
+                max = number;
+            }
+        }
 
-        return name;
-    }
-
-    static int PromptUserNumber()
-    {
-        Console.Write("Please enter your favorite number: ");
-        int number = int.Parse(Console.ReadLine());
-
-        return number;
-    }
-
-    static int SquareNumber(int number)
-    {
-        int square = number * number;
-        return square;
-    }
-
-    static void DisplayResult(string name, int square)
-    {
-        Console.WriteLine($"{name}, the square of your number is {square}");
+        Console.WriteLine($"The max is: {max}");
     }
 }
