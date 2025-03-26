@@ -1,0 +1,22 @@
+CSE210 - Agustin Heredia
+W02 Assignment: Explain Abstraction
+
+---> What is abstraction and why is it important?
+
+-- Answer:
+
+Abstraction is the principle of hiding complex implementation details while exposing only essential functionality. This makes code easier to manage, understand, and scale.
+
+A key benefit of abstraction is modularity—it allows different parts of a program to interact without knowing internal details. For example, in a shopping cart program, a Product class can encapsulate product details while exposing only necessary methods:
+
+Coding Example:
+class Product:
+    def __init__(self, name, price, quantity):
+        self.name = name
+        self.price = price
+        self.quantity = quantity
+
+    def get_total_price(self):
+        return self.price * self.quantity
+
+This allows the rest of the program to use get_total_price() without worrying about how it works, leading to cleaner and more maintainable code.
