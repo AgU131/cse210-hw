@@ -2,9 +2,12 @@
 CSE210 Activity Week 5 - Agustin Heredia
 What is inheritance and why is it important?
 
-Inheritance is an object-oriented programming principle that allows one class (called a child or subclass) to acquire the properties and behaviors (fields and methods) of another class (called a parent or base class). This relationship enables code reuse and promotes a hierarchical classification.
-A key benefit of inheritance is code reuse. Instead of writing the same code in multiple classes, we can write it once in a base class and allow other classes to inherit from it. This makes the code easier to maintain, extend, and understand.
-In my program, I implemented inheritance by creating a base class called Actor that contained shared properties and methods such as Position, Text, and Color. Then I created child classes like Rock and Gem that inherited from Actor. This allowed each item in the game to behave like an Actor but also have its own unique characteristics.
+Inheritance is an object-oriented programming principle that allows one class (called a child or subclass) to acquire the properties and behaviors (fields and methods) of another class (called a parent or base class). 
+This relationship enables code reuse and promotes a hierarchical classification.
+A key benefit of inheritance is code reuse. Instead of writing the same code in multiple classes, we can write it once in a base class and allow other classes to inherit from it. 
+This makes the code easier to maintain, extend, and understand.
+In my program, I implemented inheritance by creating a base class called Actor that contained shared properties and methods such as Position, Text, and Color. Then I created child classes like Rock and Gem that inherited from Actor. 
+This allowed each item in the game to behave like an Actor but also have its own unique characteristics.
 
 */ 
 
