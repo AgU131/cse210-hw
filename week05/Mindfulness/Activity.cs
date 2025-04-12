@@ -1,5 +1,4 @@
 using System.Xml.Linq;
-
 public class Activity
 {
     private string _name;

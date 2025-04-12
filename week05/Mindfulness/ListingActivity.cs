@@ -1,8 +1,6 @@
 using System.Security.Cryptography.X509Certificates;
-
 public class ListingActivity:Activity
 {
-    
     private List<String> _prompts= new List<string>();
 
     public ListingActivity(string name, string description): base(name, description)
@@ -54,9 +52,6 @@ public class ListingActivity:Activity
     }
     public List<string> GetListFromUser()
     {
-        
         return _prompts;
     }
-
-
 }

@@ -1,16 +1,15 @@
-using System;
-/*  FOR Exceeding Requirements
-    * I added the function of Saving to a file  each time we select an activity to do.
+/*  Exceeding Requirements:
+    I added the function of Saving to a file each time we select an activity to do.
     The saved values are: Date, Name of Activity and Seconds spent.
     For that I created a "SaveToAFile(String file)" method inside Activity Class because it is used by each activity.
     I added a method inside Program class as an option to show all entries of "ActivityLog.txt" File, because it will be used once.
 
 */
+using System;
 class Program
 {
     static void Main(string[] args)
     {
-
         string fileName ="ActivityLog.txt";
         string option= "";
 
