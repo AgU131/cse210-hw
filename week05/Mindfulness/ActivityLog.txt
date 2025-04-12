@@ -1,0 +1,3 @@
+12/4/2025 00:00:00,Breathing Activity.,5
+12/4/2025 00:00:00,Reflecting Activity.,5
+12/4/2025 00:00:00,Listing Activity.,2
