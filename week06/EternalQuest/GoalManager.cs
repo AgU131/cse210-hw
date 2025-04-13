@@ -27,7 +27,7 @@ public class GoalManager
         Console.WriteLine("   5. Record Event");
         Console.WriteLine("   6. Compare W/another Goals File");
         Console.WriteLine("   7. Quit");
-        Console.Write("What is your choice?");
+        Console.Write("What is your choice? ");
     }
     public void DisplayPlayerInfo()
     {
@@ -35,7 +35,7 @@ public class GoalManager
         Console.WriteLine("   1. Simple Goal");
         Console.WriteLine("   2. Eternal Goal");
         Console.WriteLine("   3. Checklist Goal");
-        Console.Write("Which type of Goal would  you like to create?");
+        Console.Write("Select which Goal you'd like to create? ");
     }
     public void ListGoalNames()
     {

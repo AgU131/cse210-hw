@@ -12,7 +12,7 @@ class Program
     {
         string fileName1="Goals.txt";
         Console.Clear();
-        GoalManager goalManager=new GoalManager();
+        GoalManager goalManager = new GoalManager();
 
         string option= "";
         while (option != "6")
@@ -94,13 +94,13 @@ class Program
                 Console.WriteLine($"Comparing first File({fileName1}) to the last one({fileName2})");
                 if (score2 > score1)
                 {
-                    Console.WriteLine($"#### YOU ARE DOING A GREAT JOB AND INCREASES {score2 - score1} POINTS!!! ####\n");
+                    Console.WriteLine($"#### YOU ARE DOING A GREAT JOB AND INCREASES {score2 - score1} POINTS! ####\n");
                 }
                 if (score2 == score1)
                 {
-                    Console.WriteLine($" You're doing well. You can improve yourself!!!");
+                    Console.WriteLine($" You're doing well. You can improve yourself!");
                 }
-                if (score2 < score1 * 1.1) //if diference between  first score and the second is greater than 10%
+                if (score2 < score1 * 1.1) //if diference between first score and the second is greater than 10%
                 {
                     Console.WriteLine($"YOU MUST TO CHECK YOUR GOALS :(\n");
                 }

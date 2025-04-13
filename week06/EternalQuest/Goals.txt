@@ -1,0 +1,4 @@
+Score:50
+SimpleGoal:Running~Run 2 tme a week~50~True
+EternalGoal:Read the Scriptures~Read 1 chapter of the scriptures~100
+CheckListGoal:Pray~Pray when I wake up~50~0~1~0
