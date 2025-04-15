@@ -1,5 +1,4 @@
 using System;
-
 public abstract class Activity
 {
     private DateTime _date;
@@ -9,14 +8,11 @@ public abstract class Activity
         _date = date;
         _minutes = minutes;
     }
-
     protected DateTime Date => _date;
     protected int Minutes => _minutes;
-
     public abstract double GetDistance();
     public abstract double GetSpeed();
     public abstract double GetPace();
-
     public virtual string GetSummary()
     {
         return $"{_date:dd MMM yyyy} {GetType().Name} ({_minutes} min)- " +

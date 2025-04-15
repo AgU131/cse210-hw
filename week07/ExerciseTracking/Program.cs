@@ -1,12 +1,13 @@
 using System;
 using System.Collections.Generic;
+
 class Program
 {
     static void Main(string[] args)
     {
         List<Activity> activities = new List<Activity>();
         DateTime today = DateTime.Now;
-
+        
         Running running = new Running(today, 30, 3.0);
         activities.Add(running);
         Cycling cycling = new Cycling(today, 45, 15.0);
